@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#header img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 60px 20px;
+    margin-top: 60px; /* Offset for fixed header */
+    text-align: center;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.price-option {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilos base, aplicáveis a dispositivos de todos os tamanhos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Códigos adicionais anteriormente fornecidos */
+/* ... */
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .feature-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pricing-table {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        padding: 10px;
+        text-align: center;
+    }
+
+    #header {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .price-option {
+        width: 100%; /* Faz com que cada opção de preço ocupe a largura total da tela */
+    }
+
+    header img {
+        width: 100px; /* Reduz o tamanho do logo em telas menores */
+    }
+}
+
